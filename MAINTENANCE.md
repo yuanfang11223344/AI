@@ -1,0 +1,64 @@
+# AI.git 维护规则
+
+## 仓库定位
+
+本仓库是 AI 资讯日报/周报的 Git 维护仓库。
+
+- 远端：`https://github.com/yuanfang11223344/AI.git`
+- 本地 clone：`/Users/ganxuanzhi/Documents/自动化任务/repos/AI_repo`
+- 报告目录：`/Users/ganxuanzhi/Documents/自动化任务/repos/AI_repo/AI资讯`
+
+## 报告同步规则
+
+每次由 Codex 生成的 AI 日报或周报，必须同步到本仓库的 `AI资讯/` 目录：
+
+- 日报：`AI资讯/YYYY-MM-DD.md`
+- 周报：`AI资讯/weekly-YYYY-WXX.md`
+
+同一份报告还应同步到：
+
+- `/Users/ganxuanzhi/Documents/Obsidian Vault/AI资讯/output/`
+- `/Users/ganxuanzhi/学习/AI资讯/output/`
+
+Learning.git 不再接收 AI 资讯报告，仅维护 ChatGPT/Gemini 学习笔记。
+
+## 提交规则
+
+1. AI 资讯自动化按用户授权，生成报告后可以执行 `git add`、`git commit` 和 `git push` 上传到 AI.git。
+2. 自动提交范围仅限 AI 资讯报告与 AI.git 维护文件，不提交缓存、下载残留或无关目录。
+3. 提交前运行并记录：
+
+```bash
+git -C /Users/ganxuanzhi/Documents/自动化任务/repos/AI_repo status --short
+git -C /Users/ganxuanzhi/Documents/自动化任务/repos/AI_repo diff --stat
+```
+
+4. 推荐提交信息：
+   - 日报：`ai-news: update daily YYYY-MM-DD`
+   - 周报：`ai-news: update weekly YYYY-WXX`
+5. `git push` 失败时必须在执行报告中写明错误，不静默跳过。
+6. 不提交 `.DS_Store`、临时文件、缓存、浏览器下载残留或无关目录。
+
+## 通知规则
+
+生成、同步和 Git 上传完成后，使用 macOS 通知提醒用户：
+
+```bash
+osascript -e 'display notification "AI 资讯已生成并同步 Git" with title "AI 资讯自动化"'
+```
+
+## 内容质量规则
+
+- 每条资讯必须有来源链接。
+- 论文条目必须有 arXiv 链接。
+- 芯片与互连板块必须独立且不少于要求数量。
+- 周报的“为什么重要”和“趋势观察”必须引用具体事件、论文或数据。
+- 全文中文，专业术语保留英文。
+
+## 维护检查
+
+```bash
+git -C /Users/ganxuanzhi/Documents/自动化任务/repos/AI_repo remote -v
+git -C /Users/ganxuanzhi/Documents/自动化任务/repos/AI_repo status --short
+find /Users/ganxuanzhi/Documents/自动化任务/repos/AI_repo/AI资讯 -maxdepth 1 -type f | sort
+```

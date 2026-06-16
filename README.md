@@ -1,0 +1,32 @@
+# AI 资讯仓库
+
+本仓库对应远端 `https://github.com/yuanfang11223344/AI.git`，用于维护 AI 日报、周报和相关管理规则。
+
+## 目录
+
+```text
+.
+├── README.md
+├── MAINTENANCE.md
+└── AI资讯/
+    ├── README.md
+    ├── YYYY-MM-DD.md
+    └── weekly-YYYY-WXX.md
+```
+
+## 同步来源
+
+报告由 Codex automation `ai-daily-news` 生成，首要输出到：
+
+`/Users/ganxuanzhi/Documents/Obsidian Vault/AI资讯/output/`
+
+随后同步到本仓库：
+
+`/Users/ganxuanzhi/Documents/自动化任务/repos/AI_repo/AI资讯/`
+
+## Git 规则
+
+自动化只负责写入报告文件和输出执行报告，不自动提交或推送。
+提交前必须先展示变更摘要，等待用户确认。
+
+详细规则见 `MAINTENANCE.md`。
