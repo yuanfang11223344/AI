@@ -22,7 +22,7 @@
 
 随后同步到本仓库：
 
-`/Users/ganxuanzhi/Documents/自动化任务/repos/AI_repo/AI资讯/`
+`/Users/ganxuanzhi/Documents/自动化任务/仓库缓存/AI资讯仓库/AI资讯/`
 
 ## Git 规则
 
