@@ -99,5 +99,6 @@
 - 已存在跳过清单：`2026-08-08.md` 至 `2026-08-16.md`、`weekly-2026-W33.md`。
 - 搜索信源：产业动态、芯片互连、论文、公司动态、开源工具、社区讨论 6 类；另补充官方模型/会议/论文来源。
 - 内容统计：本周重要事件 7 条，LLM 技术解读 5 条，必读论文 3 篇，芯片与互连深度 4 条，趋势观察 3 条，下周关注 5 行，分享卡片 5 条。
-- 保存路径：待最终同步至 Obsidian、本地 AI 资讯报告输出、AI.git。
-- Git 上传结果：待最终 commit/push 后回填。
+- 保存路径：`/Users/ganxuanzhi/Documents/Obsidian Vault/AI资讯/报告输出/weekly-2026-W34.md`、`/Users/ganxuanzhi/学习/AI资讯/报告输出/weekly-2026-W34.md`、`/Users/ganxuanzhi/Documents/自动化任务/仓库缓存/AI资讯仓库/AI资讯/weekly-2026-W34.md`。
+- 同步校验：三处 `weekly-2026-W34.md` SHA-256 一致；主体同步哈希为 `4aa25c17a5e09ffa226ebaa152de2bc6b6c7d7e3c54dfa87b9b2b3e05a941f8b`。
+- Git 上传结果：主体报告 commit `5cf8367` 已推送到 `origin/main`（`f9922b0..5cf8367`）；执行报告回填随后以收尾提交同步。
